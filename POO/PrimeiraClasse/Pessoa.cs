@@ -3,7 +3,7 @@ namespace PrimeiraClasse
     public class Pessoa
     {
         public string Nome;
-        public int Idade;
+        public int Idade = 0;
         public int Altura;//em centímetros
 
         public void Falar()
@@ -14,9 +14,19 @@ namespace PrimeiraClasse
         {
             Console.WriteLine($"ZZZzzzz ...");
         }
-// criar um objeto da classe Pessoa
-// preencher as propriedades da classe Pessoa
-// rodar os métodos da classe pessoa, parecido com o que fizemos na classe
-// Carro
+
+        // se não treinar vai envelhercer mais rápido
+        public void Envelhecer(int _id = 0)
+        {
+            if (_id > 0)
+            {//adiciona a idade que foi recebida
+                Idade += _id;
+            }
+            else
+            {//adiciona apenas 1 ano na idade
+
+                Idade++;
+            }
+        }
     }
 }
