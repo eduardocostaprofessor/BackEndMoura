@@ -1,0 +1,38 @@
+﻿
+
+
+using Exemplos;
+
+// Gato birobinha = new Gato();
+// Cachorro toto = new Cachorro();
+
+// Crie uma classe Pessoa que herde de Animal
+// Adicione as propriedades Nome e Idade
+// Adicione o método Dormir()
+// Crie um objeto da classe pessoa e 
+// preencha as propriedades nome, idade e exiba os detalhes da pessoa no console
+
+// Pessoa edu = new Pessoa();
+// edu.Nome = "Eduardo Mendes";
+// edu.Idade = 43;
+
+// Console.WriteLine($"Nome: {edu.Nome}");
+// Console.WriteLine($"Idade do {edu.Nome}: {edu.Idade} anos");
+
+// Console.WriteLine($"Som do {edu.Nome}: ");
+// edu.FazerSom();
+// Console.WriteLine($"{edu.Nome} está se movendo: ");
+// edu.Mover();
+
+// Console.WriteLine($"{edu.Nome} foi dormir:");
+// edu.Dormir();
+
+// 2. Classe ContaBancaria
+// Crie uma classe abstrata ContaBancaria com os métodos Depositar(double valor) e Sacar(double valor).
+// Crie duas classes: ContaCorrente e ContaPoupanca, cada uma com sua própria forma de calcular o saldo após saque (por exemplo, taxa diferente).
+
+
+
+Console.Clear();
+
+ContaCorrente cc = new ContaCorrente(10);
