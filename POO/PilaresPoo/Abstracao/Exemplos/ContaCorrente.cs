@@ -34,7 +34,7 @@ namespace Exemplos
             if(valor <= 0 || Saldo < totalComTaxa)
             {//não pode sacar
                 //debita da conta
-                Console.WriteLine($"O valor do saque deve ser poditivo e ter dinheiro na conta");
+                Console.WriteLine($"O valor do saque deve ser positivo e ter dinheiro na conta");
                 return;
             }
 
