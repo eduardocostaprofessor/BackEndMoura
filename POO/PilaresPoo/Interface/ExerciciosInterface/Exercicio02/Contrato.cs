@@ -4,9 +4,15 @@ namespace Exercicio02
     {
         public string Nome;
         public string TextoClausulas;
+
+    
+
         public void Imprimir()
         {
-            Console.WriteLine($"Imprimindo o contrato ...");
+            Console.WriteLine($@"
+    Contratante: {Nome}
+    Cláusulas: {TextoClausulas}    
+        ");
         }
     }
 }

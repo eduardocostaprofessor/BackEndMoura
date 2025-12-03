@@ -85,17 +85,47 @@ void CadastrarFaturas()
 
 void CadastrarContratos()
 {
-
+    Console.WriteLine($"Informe o nome para o contrato");
+    string nome = Console.ReadLine();
+    Console.WriteLine($"Qual o texto da cláusula do contrato?");
+    string texto = Console.ReadLine();
+    //cirar um objeto da classe Contrato
+    Contrato contrato = new Contrato();
+    contrato.Nome = nome;
+    contrato.TextoClausulas = texto;
+    //cadastrar o contrato na lista de documentos
+    documentos.Add(contrato);
+    Console.WriteLine($"Contrato cadastrado com sucesso!");
+    
 }
 
 void CadastrarRelatorios()
 {
-
+    Console.Write($"Digite o nome do responsável:");
+    string nome = Console.ReadLine();
+    Console.Write($"Digite o texto do relatórios");
+    string texto = Console.ReadLine();
+    // cria um objeto da classe Relatorio e preenche as propriedades
+    Relatorio relatorio = new Relatorio();
+    relatorio.NomeResponsavel = nome;
+    relatorio.TextoRelatorio = texto;
+    //cadastra o relatório na lista de documentos imprimíveis
+    documentos.Add(relatorio);
+    Console.WriteLine($"Relatório cadastrado com sucesso!");
+    
 }
 
 void ListarContratos()
 {
-
+    Console.WriteLine($"Listando Contratos: ");
+    
+    foreach (var item in documentos)
+    {
+        if (item is Contrato)
+        {
+            item.Imprimir();
+        }
+    }
 }
 
 void ListarFaturas()
@@ -113,7 +143,15 @@ void ListarFaturas()
 
 void ListarRelatorios()
 {
-
+    Console.WriteLine($"Listando Relatórios:");
+    
+    foreach (var item in documentos)
+    {
+        if (item is Relatorio)
+        {
+            item.Imprimir();
+        }
+    }
 }
 
 

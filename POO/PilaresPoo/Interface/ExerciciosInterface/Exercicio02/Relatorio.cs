@@ -5,7 +5,10 @@ namespace Exercicio02
         public string TextoRelatorio;
         public void Imprimir()
         {
-            Console.WriteLine($"Imprimindo o relatório");
+            Console.WriteLine($@"
+    Responsável: {NomeResponsavel}
+    Relatório: {TextoRelatorio}
+    ");
         }
     }
 }
