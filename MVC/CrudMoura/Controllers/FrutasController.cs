@@ -23,8 +23,6 @@ namespace CrudMoura.Controllers
 
         public IActionResult Index()
         {
-
-
             return View();
         }
 
@@ -37,8 +35,8 @@ namespace CrudMoura.Controllers
         }
 
 
-        [HttpGet]
         // Mostra a tela de cadastrar
+        [HttpGet]
         public IActionResult Create()
         {
             return View();
